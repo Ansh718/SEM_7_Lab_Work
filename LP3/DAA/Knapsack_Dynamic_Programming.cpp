@@ -37,11 +37,11 @@ private:
     int capacity;
     vector<Item> items;
 
-    int recursiveKnapsack(int n, int W);
-    int memoizationKnapsack(int n, int W, vector<vector<int>> &memo);
+    int recursiveKnapsack(int, int);
+    int memoizationKnapsack(int, int, vector<vector<int>> &);
 
 public:
-    Knapsack(int, const vector<Item> &itemList);
+    Knapsack(int, const vector<Item> &);
     int solve();
     int solveRecursive();
     int solveMemoization();
